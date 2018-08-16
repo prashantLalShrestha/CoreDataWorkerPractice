@@ -15,6 +15,10 @@
 		217B9631212539860049CA42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217B962F212539860049CA42 /* LaunchScreen.storyboard */; };
 		217B963C212539860049CA42 /* CoreDataWorkerPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217B963B212539860049CA42 /* CoreDataWorkerPracticeTests.swift */; };
 		217B9647212539860049CA42 /* CoreDataWorkerPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217B9646212539860049CA42 /* CoreDataWorkerPracticeUITests.swift */; };
+		217B9659212539A40049CA42 /* CoreDataWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217B9655212539A30049CA42 /* CoreDataWorker.swift */; };
+		217B965A212539A40049CA42 /* ManagedObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217B9656212539A30049CA42 /* ManagedObjectProtocol.swift */; };
+		217B965B212539A40049CA42 /* ManagedObjectConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217B9657212539A30049CA42 /* ManagedObjectConvertible.swift */; };
+		217B965C212539A40049CA42 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217B9658212539A40049CA42 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		217B9642212539860049CA42 /* CoreDataWorkerPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataWorkerPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		217B9646212539860049CA42 /* CoreDataWorkerPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataWorkerPracticeUITests.swift; sourceTree = "<group>"; };
 		217B9648212539860049CA42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		217B9655212539A30049CA42 /* CoreDataWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataWorker.swift; sourceTree = "<group>"; };
+		217B9656212539A30049CA42 /* ManagedObjectProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObjectProtocol.swift; sourceTree = "<group>"; };
+		217B9657212539A30049CA42 /* ManagedObjectConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObjectConvertible.swift; sourceTree = "<group>"; };
+		217B9658212539A40049CA42 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		217B9622212539850049CA42 /* CoreDataWorkerPractice */ = {
 			isa = PBXGroup;
 			children = (
+				217B96542125398A0049CA42 /* CoreDataWorker */,
 				217B9623212539850049CA42 /* AppDelegate.swift */,
 				217B9625212539850049CA42 /* ViewController.swift */,
 				217B9627212539860049CA42 /* Main.storyboard */,
@@ -126,6 +135,17 @@
 				217B9648212539860049CA42 /* Info.plist */,
 			);
 			path = CoreDataWorkerPracticeUITests;
+			sourceTree = "<group>";
+		};
+		217B96542125398A0049CA42 /* CoreDataWorker */ = {
+			isa = PBXGroup;
+			children = (
+				217B9658212539A40049CA42 /* CoreDataStack.swift */,
+				217B9655212539A30049CA42 /* CoreDataWorker.swift */,
+				217B9657212539A30049CA42 /* ManagedObjectConvertible.swift */,
+				217B9656212539A30049CA42 /* ManagedObjectProtocol.swift */,
+			);
+			path = CoreDataWorker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				217B965C212539A40049CA42 /* CoreDataStack.swift in Sources */,
+				217B9659212539A40049CA42 /* CoreDataWorker.swift in Sources */,
+				217B965A212539A40049CA42 /* ManagedObjectProtocol.swift in Sources */,
 				217B9626212539850049CA42 /* ViewController.swift in Sources */,
 				217B962C212539860049CA42 /* CoreDataWorkerPractice.xcdatamodeld in Sources */,
+				217B965B212539A40049CA42 /* ManagedObjectConvertible.swift in Sources */,
 				217B9624212539850049CA42 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
